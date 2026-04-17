@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "Main",
+      "projectName": "GolemMultiplayer_85eea382"
+    },
+    {
+      "type": "java",
       "name": "Ejecutar Mundo Golem 3D",
       "request": "launch",
       "mainClass": "Main",
