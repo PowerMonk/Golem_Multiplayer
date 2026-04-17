@@ -14,6 +14,7 @@
       "request": "launch",
       "mainClass": "Main",
       "projectName": "GolemsMultijugador",
+      "runtimeVersion": "11",
       "vmArgs": "--add-exports java.desktop/sun.awt=ALL-UNNAMED -Djava.library.path=\"${workspaceFolder}/lib\""
     }
   ]
