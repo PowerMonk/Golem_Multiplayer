@@ -69,6 +69,11 @@ public class GameClient {
         writer = new PrintWriter(socket.getOutputStream(), true, StandardCharsets.UTF_8);
 
         readerExecutor.submit(this::readLoop);
+        
+        // Wait a tiny bit to ensure readLoop is actually running before sending HELLO
+        // and expecting ASSIGN
+        Thread.sleep(50);
+
         send(GameMessage.of(MessageType.HELLO, defaultPlayerName()));
 
         boolean assigned = assignedLatch.await(8, TimeUnit.SECONDS);
