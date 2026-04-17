@@ -1,0 +1,8 @@
+{
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar",
+    "c:\\Program Files\\Java\\Java3D\\1.5.1\\lib\\ext\\j3dcore.jar",
+    "c:\\Program Files\\Java\\Java3D\\1.5.1\\lib\\ext\\j3dutils.jar",
+    "c:\\Program Files\\Java\\Java3D\\1.5.1\\lib\\ext\\vecmath.jar"
+  ]
+}
