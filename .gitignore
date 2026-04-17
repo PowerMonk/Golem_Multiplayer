@@ -1,4 +1,5 @@
 *.class
 
-.vscode/settings.json
-.vscode/launch.json
+.idea/
+.vscode/
+out/production/
