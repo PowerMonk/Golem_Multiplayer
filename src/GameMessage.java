@@ -32,7 +32,7 @@ public final class GameMessage {
             return null;
         }
 
-        String[] split = trimmed.split("\\\\|", -1);
+        String[] split = trimmed.split("\\|", -1);
         if (split.length == 0) {
             return null;
         }
