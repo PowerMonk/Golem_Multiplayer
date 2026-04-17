@@ -3,6 +3,10 @@ import javax.swing.SwingUtilities;
 
 public class Main {
     public static void main(String[] args) {
+        // Configure Java 3D to disable OpenGL and prefer software rendering
+        System.setProperty("sun.java2d.opengl", "false");
+        System.setProperty("jogl.disable.openglcore", "true");
+        
         SwingUtilities.invokeLater(Main::showRoleDialog);
     }
 
@@ -45,7 +49,8 @@ public class Main {
                 );
                 localClient.start();
             } catch (Exception ex) {
-                final String message = "Host startup failed: " + ex.getMessage();
+                ex.printStackTrace();
+                final String message = "Host startup failed: " + (ex.getMessage() != null ? ex.getMessage() : ex.getClass().getSimpleName());
                 SwingUtilities.invokeLater(() -> JOptionPane.showMessageDialog(
                         null,
                         message,
@@ -95,7 +100,8 @@ public class Main {
             try {
                 client.start();
             } catch (Exception ex) {
-                final String message = "Client startup failed: " + ex.getMessage();
+                ex.printStackTrace();
+                final String message = "Client startup failed: " + (ex.getMessage() != null ? ex.getMessage() : ex.getClass().getSimpleName());
                 SwingUtilities.invokeLater(() -> JOptionPane.showMessageDialog(
                         null,
                         message,

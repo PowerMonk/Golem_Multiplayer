@@ -6,14 +6,16 @@
       "name": "Main",
       "request": "launch",
       "mainClass": "Main",
-      "projectName": "Golem_756be4d9"
+      "projectName": "Golem_Multiplayer_23386f20",
+      "runtimeVersion": "11"
     },
     {
       "type": "java",
       "name": "Main",
       "request": "launch",
       "mainClass": "Main",
-      "projectName": "GolemMultiplayer_85eea382"
+      "projectName": "GolemMultiplayer_85eea382",
+      "runtimeVersion": "11"
     },
     {
       "type": "java",
@@ -21,6 +23,7 @@
       "request": "launch",
       "mainClass": "Main",
       "projectName": "GolemsMultijugador",
+      "runtimeVersion": "11",
       "vmArgs": "--add-exports java.desktop/sun.awt=ALL-UNNAMED -Djava.library.path=\"${workspaceFolder}/lib\""
     }
   ]
